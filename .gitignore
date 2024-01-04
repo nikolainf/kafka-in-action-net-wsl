@@ -1,0 +1,9 @@
+# Visual Studio 2015/2017 and greater cache/options directory
+.vs/
+
+
+# Build results
+[Dd]ebug/
+[Bb]in/
+[Oo]bj/
+
