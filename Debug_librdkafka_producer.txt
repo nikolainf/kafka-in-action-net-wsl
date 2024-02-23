@@ -1,0 +1,11 @@
+1. git clone https://github.com/confluentinc/librdkafka.git
+2. С помощь CLion открыть librdkafka
+3. В диалоге выбора project configuration
+выбрать CMake Project
+4. Диалог Open Project Wizard оставить всё по умлочанию
+5. Выбрать конфигурацию producer из запустить debug(возможно достаточно запустить build)
+6. После предыдущего шага в папке librdkafka\cmake-build-debug\src появится сборка librdkafka.dll
+7. Скоприровать сборку librdkafka.dll 
+	из папки librdkafka\cmake-build-debug\src
+	в папку librdkafka\cmake-build-debug\examples
+8. Всё готово! Запускаем Debug с конфигурацией producer(или любую другую конфигурацию).
