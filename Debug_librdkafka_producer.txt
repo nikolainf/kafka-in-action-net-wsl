@@ -9,3 +9,4 @@
 	из папки librdkafka\cmake-build-debug\src
 	в папку librdkafka\cmake-build-debug\examples
 8. Всё готово! Запускаем Debug с конфигурацией producer(или любую другую конфигурацию).
+9. Если не запускается консоль при дебаге. В конфигурации Дебага нужно установить чекбокс Run in external console
