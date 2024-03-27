@@ -1,0 +1,30 @@
+{
+  "namespace": "business.person",
+  "type": "record",
+  "name": "User",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int",
+      "doc": "Идентфикатор пользователя"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "doc": "Имя пользователя"
+    },
+    {
+      "name": "gender",
+      "type": {
+        "type": "enum",
+        "name": "Gender",
+        "symbols": [
+          "Man",
+          "Woman"
+        ]
+
+      },
+      "doc": "Gender of User"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
-﻿using Confluent.Kafka;
+﻿using business.person;
+using Confluent.Kafka;
 using Confluent.Kafka.SyncOverAsync;
 using Confluent.SchemaRegistry;
 using Confluent.SchemaRegistry.Serdes;
@@ -18,16 +19,20 @@ CancellationTokenSource cts = new();
             Url = schemaRegistryUrl
         }))
 using (var consumer =
-    new ConsumerBuilder<long, Alert>(new ConsumerConfig
+    new ConsumerBuilder<long, User>(new ConsumerConfig
     {
         BootstrapServers = bootstrapServers,
         GroupId = groupName
     })
-    .SetValueDeserializer(new AvroDeserializer<Alert>(schemaRegister).AsSyncOverAsync())
+    .SetValueDeserializer(new AvroDeserializer<User>(schemaRegister).AsSyncOverAsync())
         .SetErrorHandler((_, e) => Console.WriteLine($"Error: {e.Reason}"))
         .Build())
     {
-        consumer.Subscribe(topicName);
+    TopicPartitionOffset tps = new (new TopicPartition(topicName, 0),
+ Offset.Beginning);
+    consumer.Assign(tps);
+    //consumer.Subscribe(topicName);
+        
 
         try
         {
@@ -55,8 +60,8 @@ using (var consumer =
 
 
 
-string AlertToString(Alert alert)
+string AlertToString(User alert)
 {
-    string result = $"sensor_id = {alert.sensor_id}\r\ntime={alert.time}\r\nstatus={alert.status}";
+    string result = $"user_id = {alert.id}\r\nuser_name={alert.name}";
     return result;
 }

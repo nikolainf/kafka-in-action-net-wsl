@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaInAction.AlertProducer", "KafkaInAction.AlertProducer\KafkaInAction.AlertProducer.csproj", "{B9C51B4F-4CDF-4D5D-8D2B-9965598C93A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaInAction.AlertProducer", "KafkaInAction.AlertProducer\KafkaInAction.AlertProducer.csproj", "{B9C51B4F-4CDF-4D5D-8D2B-9965598C93A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KafkaInAction.AlertConsumer", "KafkaInAction.AlertConsumer\KafkaInAction.AlertConsumer.csproj", "{5F157821-3637-48A2-A9E4-7F53737EDFEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaInAction.AlertConsumer", "KafkaInAction.AlertConsumer\KafkaInAction.AlertConsumer.csproj", "{5F157821-3637-48A2-A9E4-7F53737EDFEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaInAction.Chapter4", "KafkaInAction.Chapter4\KafkaInAction.Chapter4.csproj", "{41A8AB2F-CA67-4009-8AF6-A2E94426C103}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter4", "Chapter4", "{E2FF71D5-5DE7-4C77-A793-A8E88920BCF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlertProducer", "AlertProducer\AlertProducer.csproj", "{FB226267-2299-4ADC-BF29-632628B1B45B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuditProducer", "AuditProducer\AuditProducer.csproj", "{D77AC50A-E90A-4597-98BA-43711CC76510}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +29,25 @@ Global
 		{5F157821-3637-48A2-A9E4-7F53737EDFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F157821-3637-48A2-A9E4-7F53737EDFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F157821-3637-48A2-A9E4-7F53737EDFEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41A8AB2F-CA67-4009-8AF6-A2E94426C103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41A8AB2F-CA67-4009-8AF6-A2E94426C103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41A8AB2F-CA67-4009-8AF6-A2E94426C103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41A8AB2F-CA67-4009-8AF6-A2E94426C103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB226267-2299-4ADC-BF29-632628B1B45B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB226267-2299-4ADC-BF29-632628B1B45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB226267-2299-4ADC-BF29-632628B1B45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB226267-2299-4ADC-BF29-632628B1B45B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D77AC50A-E90A-4597-98BA-43711CC76510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D77AC50A-E90A-4597-98BA-43711CC76510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D77AC50A-E90A-4597-98BA-43711CC76510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D77AC50A-E90A-4597-98BA-43711CC76510}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB226267-2299-4ADC-BF29-632628B1B45B} = {E2FF71D5-5DE7-4C77-A793-A8E88920BCF0}
+		{D77AC50A-E90A-4597-98BA-43711CC76510} = {E2FF71D5-5DE7-4C77-A793-A8E88920BCF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {59B43897-5BAD-4FD1-8383-0141A328606F}
