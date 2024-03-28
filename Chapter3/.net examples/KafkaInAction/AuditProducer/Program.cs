@@ -11,7 +11,6 @@ Dictionary<string, string> kaProperties = new()
 
 
 using var producer = new ProducerBuilder<string, string>(kaProperties)
-    .Tim
     .Build();
 
 Message<string, string> producerRecord = new();

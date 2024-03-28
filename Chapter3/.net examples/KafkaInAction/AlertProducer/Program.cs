@@ -22,4 +22,7 @@ producerRecord.Value = alert.AlertMessage;
 
 var result = await producer.ProduceAsync("kinaction_alert", producerRecord);
 
+Console.WriteLine($"kinaction_info offset = {result.Offset}, topic = {result.Topic}, timestamp = {result.Timestamp.UtcDateTime}");
+
+
 

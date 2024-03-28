@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter4", "Chapter4", "{E2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlertProducer", "AlertProducer\AlertProducer.csproj", "{FB226267-2299-4ADC-BF29-632628B1B45B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuditProducer", "AuditProducer\AuditProducer.csproj", "{D77AC50A-E90A-4597-98BA-43711CC76510}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuditProducer", "AuditProducer\AuditProducer.csproj", "{D77AC50A-E90A-4597-98BA-43711CC76510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlertTrendingProducer", "AlertTrendingProducer\AlertTrendingProducer.csproj", "{53465F84-24DC-4478-B2C4-D4872ED3F3BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{D77AC50A-E90A-4597-98BA-43711CC76510}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D77AC50A-E90A-4597-98BA-43711CC76510}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D77AC50A-E90A-4597-98BA-43711CC76510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53465F84-24DC-4478-B2C4-D4872ED3F3BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53465F84-24DC-4478-B2C4-D4872ED3F3BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53465F84-24DC-4478-B2C4-D4872ED3F3BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53465F84-24DC-4478-B2C4-D4872ED3F3BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FB226267-2299-4ADC-BF29-632628B1B45B} = {E2FF71D5-5DE7-4C77-A793-A8E88920BCF0}
 		{D77AC50A-E90A-4597-98BA-43711CC76510} = {E2FF71D5-5DE7-4C77-A793-A8E88920BCF0}
+		{53465F84-24DC-4478-B2C4-D4872ED3F3BC} = {E2FF71D5-5DE7-4C77-A793-A8E88920BCF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {59B43897-5BAD-4FD1-8383-0141A328606F}
