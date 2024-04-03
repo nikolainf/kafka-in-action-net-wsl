@@ -6,7 +6,7 @@ public class ValueAlertSerde : ISerializer<Alert>
 {
     public byte[] Serialize(Alert data, SerializationContext context)
     {
-        var result = $"[{data.AlertLevel}], [{data.AlertMessage}]";
+        var result = $"[{data.AlertId}], [{data.AlertLevel}], [{data.AlertMessage}], [{data.StageId}]";
 
         return Encoding.UTF8.GetBytes(result);
     }

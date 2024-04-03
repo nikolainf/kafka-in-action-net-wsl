@@ -22,14 +22,14 @@ using IProducer<string, Alert> producer = new ProducerBuilder<string, Alert>(kaP
                 return 0;
             default:
                 {
-                    return random.Next(1, 2);
+                    return 1;
                 }
         }
     })
     .Build();
 
 
-Alert alert = new(101, "STAGE 1", "CRITICAL", "Stage 1 stopped");
+Alert alert = new(102, "STAGE 1", "CRITICAL", "Stage 1 stopped");
 
 Message<string, Alert> producerRecord = new();
 producerRecord.Key = alert.AlertLevel;
