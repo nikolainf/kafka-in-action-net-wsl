@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlertConsumerWithPartionerS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter5", "Chapter5", "{E485EEAC-05EE-481D-8C14-17C86C9EF04E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuditConsumer", "AuditConsumer\AuditConsumer.csproj", "{0A22A10A-EB49-4AC9-93C5-5DEF6359E05B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{9702DB9D-6968-45FA-914E-812BAE83D5C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9702DB9D-6968-45FA-914E-812BAE83D5C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9702DB9D-6968-45FA-914E-812BAE83D5C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A22A10A-EB49-4AC9-93C5-5DEF6359E05B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A22A10A-EB49-4AC9-93C5-5DEF6359E05B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A22A10A-EB49-4AC9-93C5-5DEF6359E05B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A22A10A-EB49-4AC9-93C5-5DEF6359E05B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{53465F84-24DC-4478-B2C4-D4872ED3F3BC} = {E2FF71D5-5DE7-4C77-A793-A8E88920BCF0}
 		{7913C4E0-7072-4CE9-B0AD-38DBD54C9E31} = {E2FF71D5-5DE7-4C77-A793-A8E88920BCF0}
 		{9702DB9D-6968-45FA-914E-812BAE83D5C2} = {E2FF71D5-5DE7-4C77-A793-A8E88920BCF0}
+		{0A22A10A-EB49-4AC9-93C5-5DEF6359E05B} = {E485EEAC-05EE-481D-8C14-17C86C9EF04E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {59B43897-5BAD-4FD1-8383-0141A328606F}

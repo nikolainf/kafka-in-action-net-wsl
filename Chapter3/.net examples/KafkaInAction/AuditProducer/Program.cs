@@ -14,7 +14,7 @@ using var producer = new ProducerBuilder<string, string>(kaProperties)
     .Build();
 
 Message<string, string> producerRecord = new();
-producerRecord.Value = "audit event";
+producerRecord.Value = "audit event3032";
 
 DeliveryResult<string, string> result = await producer.ProduceAsync("kinaction_audit", producerRecord);
 
