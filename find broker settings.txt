@@ -1,0 +1,1 @@
+kafka-configs --bootstrap-server localhost:9094 --entity-type brokers --entity-name 1 --all --describe | grep -o 'auto.create.topics.enable.*'

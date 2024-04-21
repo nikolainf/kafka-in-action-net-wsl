@@ -1,5 +1,4 @@
 ﻿using Confluent.Kafka;
-using System.Collections.Concurrent;
 
 Dictionary<string, string> kaProperties = new()
 {
@@ -9,14 +8,15 @@ Dictionary<string, string> kaProperties = new()
     { "max.in.flight.requests.per.connection", "1" }
 };
 
+var topicName = "kinaction_one_replica";
 
 using var producer = new ProducerBuilder<string, string>(kaProperties)
     .Build();
 
 Message<string, string> producerRecord = new();
-producerRecord.Value = "audit event3032";
+producerRecord.Value = "one replica message 3";
 
-DeliveryResult<string, string> result = await producer.ProduceAsync("kinaction_audit", producerRecord);
+DeliveryResult<string, string> result = await producer.ProduceAsync(topicName, producerRecord);
 
 Console.WriteLine($"kinaction_info offset = {result.Offset}, topic = {result.Topic}, timestamp = {result.Timestamp.UtcDateTime}");
 
