@@ -1,0 +1,17 @@
+1. Сначала нужно определить на каком брокере расположен топик
+kafka-topics --bootstrap-server localhost:9092 --describe --topic <TOPIC_NAME>
+В результать можно смотреть на любой параметр из:
+Leader, Replicas или Isr
+2. Заходим на найденный брокер.
+3. Находим в брокер файл с настройками сервера server.properties.
+У меня он находится по пути etc/kafka
+4. смотрим настройка log.dirs:
+cat server.properties | grep log.dir
+У меня это 
+log.dirs=/var/lib/kafka
+5. Перехожу в эту папку и далее в папку data
+cd data
+6. У себя я перехожу
+cd <TOPIC_NAME>-0/
+7. И смотрю файл с логами, например
+cat 00000000000000000005.log
