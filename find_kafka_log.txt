@@ -15,3 +15,6 @@ cd data
 cd <TOPIC_NAME>-0/
 7. И смотрю файл с логами, например
 cat 00000000000000000005.log
+
+-- Команда выводит список всех логов
+kafka-dump-log --print-data-log --files /var/lib/kafka/data/kinaction-test-topic-0/*.log | awk -F: '{print $NF}' | grep kinaction
